@@ -1,0 +1,11 @@
+{
+	"Name": "EmoteCapTouchLED",
+	"UniqueId" : "728ed378-7b6e-4ce3-b38b-23db33033982",
+	"Description": "Misty emotes when you touch her",
+	"StartupRules": ["Manual", "Robot"],
+	"Language": "javascript",
+	"BroadcastMode": "debug",
+	"TimeoutInSeconds": 36000,
+	"CleanupOnCancel": true,
+	"WriteToLog": false
+}
