@@ -1,2 +1,2 @@
-# Emote-on-Cap-Touch-and-LED-Gradient
-Misty emotes on touch
+# EmoteCapTouchLED
+Misty emotes on touch with an LED gradient
