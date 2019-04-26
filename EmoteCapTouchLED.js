@@ -53,22 +53,22 @@ function _Touched(data) {
 		switch(sensor) {
 			case "CapTouch_Chin":
 				blue_up();
-				misty.PlayAudioClip("<audio_file_name_with_extension>");
-				misty.ChangeDisplayImage("Happy.png");
+				misty.PlayAudio("<audio_file_name_with_extension>");
+				misty.DisplayImage("Happy.png");
 				misty.Set("touchTimeout", 6);
-				misty.SetHeadPosition("roll", -4.5, 100);
+misty.MoveHeadPosition(null, -4.5,null);
 			 	break;
 			case "CapTouch_HeadLeft":
 				blue_up();
-				misty.PlayAudioClip("<audio_file_name_with_extension>");
-				misty.ChangeDisplayImage("Wonder.png");
+				misty.PlayAudio("<audio_file_name_with_extension>");
+				misty.DisplayImage("Wonder.png");
 				misty.Set("touchTimeout", 6);
-				misty.SetHeadPosition("roll", 4.5, 100);
+misty.MoveHeadPosition(null, 4.5,null);
 			 	break;
 			default:
 				red_up();
-				misty.PlayAudioClip("<audio_file_name_with_extension>");
-				misty.ChangeDisplayImage("Angry.png");
+				misty.PlayAudio("<audio_file_name_with_extension>");
+				misty.DisplayImage("Angry.png");
 				misty.Set("touchTimeout", 3);
 		  }
 	}
