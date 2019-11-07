@@ -16,9 +16,8 @@
 // Misty Emotes to Touch on her head
 
 misty.Debug("Moving Head and Arms to home position");
-misty.MoveHeadPosition(0, 0, 0, 100);
-misty.MoveArmPosition("left", 0, 45);
-misty.MoveArmPosition("right", 0, 45);
+misty.MoveHeadDegrees(0, 0, 0, 100);
+misty.MoveArmDegrees("both", 0, 45);
 
 misty.Set("pastState", "skillStarted");
 misty.Set("red", 148);
@@ -56,14 +55,14 @@ function _Touched(data) {
 				misty.PlayAudio("<audio_file_name_with_extension>");
 				misty.DisplayImage("Happy.png");
 				misty.Set("touchTimeout", 6);
-misty.MoveHeadPosition(null, -4.5,null);
+misty.MoveHeadDegrees(null, -35, null);
 			 	break;
 			case "CapTouch_HeadLeft":
 				blue_up();
 				misty.PlayAudio("<audio_file_name_with_extension>");
 				misty.DisplayImage("Wonder.png");
 				misty.Set("touchTimeout", 6);
-misty.MoveHeadPosition(null, 4.5,null);
+misty.MoveHeadDegrees(null, 35 ,null);
 			 	break;
 			default:
 				red_up();
@@ -151,7 +150,7 @@ while (true) {
     misty.Pause(100);
 	if (misty.Get("inTouch") && secondsPast(misty.Get("touchAt")) > misty.Get("touchTimeout")) {
 		misty.Set("inTouch", false);
-        misty.MoveHeadPosition(0, 0, 0, 100);
+        misty.MoveHeadDegrees(0, 0, 0, 100);
         purple_up();
 	}	
 }
