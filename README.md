@@ -1,5 +1,7 @@
 # EmoteCapTouchLED
 
+*Last tested on `robotVersion 1.16.1.10505`*
+
 Misty emotes on touch with an LED gradient
 
 ---
